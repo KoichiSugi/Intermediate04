@@ -2,8 +2,9 @@ jQuery(document).ready(function () {
   /* Promise to make sure data loads */
   return new Promise((resolve, reject) => {
     $.ajax({
-      headers: {  'Access-Control-Allow-Origin': 'https://myfxmarkets.com/1eb7daee5f804bd6b3698ba6a11aa41d/index.php/Jsontest' },
       url: "https://myfxmarkets.com/1eb7daee5f804bd6b3698ba6a11aa41d/index.php/Jsontest",
+      headers: {  'Access-Control-Allow-Origin': 'https://myfxmarkets.com/1eb7daee5f804bd6b3698ba6a11aa41d/index.php/Jsontest' },
+      crossDomain: true,
       method: "GET",
       dataType: "JSON",
       success: function (data) {
