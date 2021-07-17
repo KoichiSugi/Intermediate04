@@ -5,4 +5,4 @@ This project uses jQuery & Ajax to get JSON data from the following end point:
 
 It then displays them in a plain html table.
 
-NodeJS is used to address a CORS issue.
+NodeJS is used as proxy to address a CORS issue.
